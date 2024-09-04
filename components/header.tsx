@@ -2,6 +2,7 @@
 
 import { useUser, SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
 import Breadcrumbs from "./ui/Breadcrumbs";
+import Image from "next/image";
 
 function Header() {
   const { user } = useUser();
@@ -10,10 +11,12 @@ function Header() {
     <div className="flex items-center justify-between p-5 bg-zinc-100">
       {/* Logo Section */}
       <div className="flex items-center space-x-4">
-        <img
+        <Image
           src="/logo2.svg"  // Path to the logo in the public directory
           alt="Logo"
           className="w-9 h-9 object-contain" // Adjust size as needed
+          height="36"
+          width="36"
         />
         {user && (
           <h1 className="text-xl font-semibold">

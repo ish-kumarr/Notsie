@@ -62,7 +62,7 @@ console.log("Question:", question);
                 <DialogHeader>
                     <DialogTitle>Chat with Notsie!</DialogTitle>
                     <DialogDescription>
-                        Chat with the document's notes and comments. Ask questions or share insights.
+                        Chat with the document&#39;s notes and comments. Ask questions or share insights.
                     </DialogDescription>
 
                     <hr className="mt-5" />
